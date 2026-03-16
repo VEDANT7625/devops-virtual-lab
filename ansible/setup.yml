@@ -1,0 +1,12 @@
+- name: Configure Server
+  hosts: servers
+  become: yes
+
+  tasks:
+
+  - name: Install Docker
+    yum:
+      name: docker
+      state: present
+
+
